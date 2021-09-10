@@ -1,0 +1,20 @@
+{
+  "name": "localtunnel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name localtunnel",
+    "dev": "node index.js --name localtunnel --watch",
+    "stop": "pm2 stop localtunnel",
+    "restart": "yarn stop && yarn start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "localtunnel": "^2.0.1",
+    "log4js": "^6.3.0",
+    "pm2": "^5.1.1"
+  }
+}
