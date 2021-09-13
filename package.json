@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --name localtunnel",
-    "dev": "node index.js --name localtunnel --watch",
+    "dev": "pm2 start index.js --name localtunnel --watch",
     "stop": "pm2 stop localtunnel",
-    "restart": "yarn stop && yarn start",
+    "restart": "pm2 restart localtunnel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
